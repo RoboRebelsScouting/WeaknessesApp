@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-1.0" maxWidth="-1.0" minHeight="-1.0" minWidth="-1.0" prefHeight="300.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="com.walpolerobotics.scouting.view.RobotOverviewController">
+  <children>
+    <SplitPane dividerPositions="0.23283082077051925" focusTraversable="true" prefHeight="300.9998779296875" prefWidth="599.0" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="0.0">
+      <items>
+        <TableView fx:id="RobotTable" prefHeight="299.0" prefWidth="NaN" scaleZ="1.0">
+          <columns>
+            <TableColumn maxWidth="69.0" minWidth="10.0" prefWidth="68.0" text="Event" fx:id="eventNameColumn" />
+            <TableColumn maxWidth="69.0" minWidth="0.0" prefWidth="68.0" text="Robot #" fx:id="robotNumberColumn" />
+          </columns>
+        </TableView>
+        <TableView fx:id="RobotStatsTable" prefHeight="299.0" prefWidth="454.0">
+          <columns>
+            <TableColumn maxWidth="115.0" minWidth="10.0" prefWidth="114.0" text="Defense" fx:id="defenseNameColumn" />
+            <TableColumn maxWidth="115.0" minWidth="0.0" prefWidth="114.0" text="Did Not Attempt" fx:id="didNotAttemptColumn" />
+            <TableColumn maxWidth="115.0" minWidth="0.0" prefWidth="114.0" text="Failed" fx:id="failedColumn" />
+            <TableColumn maxWidth="115.0" minWidth="10.0" prefWidth="114.0" text="Crossed" fx:id="crossedColumn" />
+          </columns>
+        </TableView>
+      </items>
+    </SplitPane>
+  </children>
+</AnchorPane>
